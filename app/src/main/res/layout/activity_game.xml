@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".GameActivity" >
+    <TextView
+        android:id="@+id/livesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="24sp"
+        android:text="Lives: 0" />
+    <TextView
+        android:id="@+id/textWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textSize="30sp"
+        android:text="(Word To Guess)" />
+    <Button
+        android:id="@+id/guessLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Guess A Letter!"
+        android:onClick="guessLetter"
+        />
+    <Button
+        android:id="@+id/guessWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Guess The Word!"
+        />
+</LinearLayout>
